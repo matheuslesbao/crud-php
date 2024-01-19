@@ -1,0 +1,17 @@
+{
+    "name": "alphard/testes",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "matheuslesbao",
+            "email": "matheuss.lesbao@gmail.com"
+        }
+    ],
+    "require": {
+        "league/plates": "^3.5"
+    }
+}
