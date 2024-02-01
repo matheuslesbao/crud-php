@@ -15,6 +15,10 @@ class ComposerStaticInitb4a786a87de29c90ac4c34d69cb917ef
         array (
             'League\\Plates\\' => 14,
         ),
+        'D' => 
+        array (
+            'Dotenv\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -25,6 +29,10 @@ class ComposerStaticInitb4a786a87de29c90ac4c34d69cb917ef
         'League\\Plates\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
     );
 
