@@ -39,17 +39,22 @@ class Router
         return [
             'get' => [
                 '/' =>        fn() =>  self::load('HomeController', 'index'),
-                '/contact' => fn() =>  self::load('ContactController', 'index'),
-                '/product' => fn() =>  self::load('ProductController', 'index')
+                '/customers' => fn() =>  self::load('CustomersController', 'index'),
+                '/customers-edit' => fn() =>  self::load('CustomersController', 'update'),
+                '/customers-del' => fn() =>  self::load('CustomersController', 'delete')
             ],
             'post' => [
-                '/contact' => fn() =>  self::load('ContactController', 'store')
+                '/customers' => fn() =>  self::load('CustomersController', 'create'),
+                '/customers-edit' => fn() =>  self::load('CustomersController', 'update'),
+                '/customers-del' => fn() =>  self::load('CustomersController', 'delete')
             ],
             'put' => [
-                '/product' => fn() =>  self::load('ProductController', 'update')
+                '/customers-edit' => fn() =>  self::load('CustomersController', 'update')
 
             ],
             'delete' => [
+                '/customers-del' => fn() =>  self::load('CustomersController', 'delete'),
+                
 
             ]
 
