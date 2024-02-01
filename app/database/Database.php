@@ -23,7 +23,7 @@ class Database
         $showTable = "SHOW TABLES LIKE '$table' ";
         $result = $this->connection->query($showTable);
         if (!$result->rowCount() > 0) {
-          $createTable = " CREATE TABLE `customers` (
+          $createTable = " CREATE TABLE `$table` (
             `id` INT(11) NOT NULL AUTO_INCREMENT,
             `name` VARCHAR(255) NOT NULL COLLATE 'utf8_general_ci',
             `email` TEXT(65535) NOT NULL COLLATE 'utf8_general_ci',
