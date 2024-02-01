@@ -1,10 +1,14 @@
 <?php
 
 namespace app\controllers;
-
+use app\models\Customers;
 class HomeController extends Controller
 {
     public function index(){
-        $this->view('home', ['title' => 'Home', 'name' => 'Thata']);
+        $customers = Customers::getCustomers();
+        $this->view('home', [
+            'title' => 'Home',
+            'data' => $customers,
+        ]);
     }
 }
