@@ -8,7 +8,12 @@
 </head>
 
 <body>
+     <?=$this->insert('partials/header');?>
+     
     <?= $this->section('content') ?>
+
+
+    <?=$this->insert('partials/footer');?>
 </body>
 
 </html>
